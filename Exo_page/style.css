@@ -1,0 +1,55 @@
+* {
+    box-sizing:border-box;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    float:left;
+}
+
+.B1 {
+    width: 650px;
+    height: 100px;
+    background-color: aqua;
+    float:right;
+}
+.B2 {
+    width: 650px;
+    height: 100px;
+    background-color: rgb(148, 149, 149);
+    float:right;
+}
+
+nav ul li {
+    width: 850px;
+    height:12px;
+    display:inline;
+    background-color: rgb(249, 247, 247);
+
+}
+
+li {
+    margin:60px;
+}
+
+.gauche {
+    width: 650px;
+    height: 500px;
+    background-color: green;
+    float:left;
+
+}
+
+.doite { /*faute*/
+    width: 200px;
+    height: 500px;
+    background-color: rgb(30, 0, 128);
+    float:right
+}
+
+footer {
+    background-color: black;
+    clear:top;
+}

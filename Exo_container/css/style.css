@@ -1,0 +1,51 @@
+.mére {
+    border:5px solid black;
+    display:inline-block;
+    width:500px;
+    height:375px;
+    
+}
+
+.box1 {
+    background-color: aqua;
+    float:left;
+    width:250px;
+    height:125px;
+
+}
+.box2 {
+    background-color: rgb(255, 68, 0);
+    float:right;
+    width:250px;
+    height:125px;
+}
+.box3 {
+    background-color: rgb(0, 255, 72);
+    float:left;
+    clear:both;
+    width:250px;
+    height:125px;
+}
+.box4 {
+    background-color: rgb(72, 0, 255);
+    float:right;
+    width:250px;
+    height:125px;
+}
+.box5 {
+    background-color: rgb(208, 255, 0);
+    float:left;
+    clear:both;
+    width:250px;
+    height:125px;
+}
+.box6 {
+    background-color: rgb(255, 0, 166);
+    float:right;
+    width:250px;
+    height:125px;
+}
+
+.box * {
+    text-align: center;
+}
