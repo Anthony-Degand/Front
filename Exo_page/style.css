@@ -1,55 +1,87 @@
 * {
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 .logo {
     width: 200px;
     height: 200px;
-    background-color: yellow;
-    float:left;
+    background: yellow;
+    float: left;
 }
 
 .B1 {
     width: 650px;
     height: 100px;
-    background-color: aqua;
-    float:right;
+    background: aqua;
+    float: right;
+
 }
+
 .B2 {
     width: 650px;
     height: 100px;
-    background-color: rgb(148, 149, 149);
-    float:right;
+    background: rgb(148, 149, 149);
+    float: right;
 }
 
-nav ul li {
-    width: 850px;
-    height:12px;
-    display:inline;
-    background-color: rgb(249, 247, 247);
+nav ul {
+    background: white;
+    border: 1px solid black;
 
 }
 
 li {
-    margin:60px;
+    display: inline-block;
+    padding: 0 35px 0 35px;
+    margin: 10px;
+}
+
+li a {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.corp {
+    width: 850px;
+    height: 838px;
+    background: beige;
+
 }
 
 .gauche {
     width: 650px;
     height: 500px;
-    background-color: green;
-    float:left;
+    background: green;
+    float: left;
 
 }
 
-.doite { /*faute*/
+.droite {
+    /*faute*/
     width: 200px;
     height: 500px;
-    background-color: rgb(30, 0, 128);
-    float:right
+    background: rgb(0, 13, 128);
+    float: right;
+
 }
 
 footer {
-    background-color: black;
-    clear:top;
+    background: black;
+    height: 70px;
+    width: 850px;
+    clear: both;
+
+}
+
+li a:hover {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgb(158, 157, 157);
+    color: red;
+
+}
+
+p {
+    color: white;
 }
