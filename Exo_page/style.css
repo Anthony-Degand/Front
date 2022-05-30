@@ -9,7 +9,7 @@
     float: left;
 }
 
-.B1 {
+.head1 {
     width: 650px;
     height: 100px;
     background: aqua;
@@ -17,7 +17,7 @@
 
 }
 
-.B2 {
+.head2 {
     width: 650px;
     height: 100px;
     background: rgb(148, 149, 149);
@@ -27,6 +27,7 @@
 nav ul {
     background: white;
     border: 1px solid black;
+    clear:both;
 
 }
 
@@ -38,9 +39,9 @@ li {
 
 li a {
     text-align: center;
-    text-decoration: none;
     list-style: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .corp {
@@ -55,33 +56,74 @@ li a {
     height: 500px;
     background: green;
     float: left;
+    position:relative;
+    top:-16px;
 
 }
 
 .droite {
-    /*faute*/
     width: 200px;
     height: 500px;
     background: rgb(0, 13, 128);
     float: right;
+    position:relative;
+    top:-16px;
 
 }
 
 footer {
     background: black;
-    height: 70px;
+    height: 90px;
     width: 850px;
     clear: both;
+    position:relative;
+    top:-16px;
 
 }
 
 li a:hover {
     background: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 rgb(158, 157, 157);
-    color: red;
-
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor:pointer;
 }
 
 p {
     color: white;
+}
+
+
+@media screen and (min-width:0px) and (max-width:500px){
+    .corp {width:100%;}
+    .LOGO {width:100%;}
+    .head1 {width:100%;}
+    .head2 {width:100%;}
+    .nav {width:100%;}
+    .gauche {width:100%;}
+    .droite {width:100%;}
+    footer {width:100%;}  
+}
+
+@media screen and (min-width:500px) and (max-width:700px){
+    .corp {width:100%}
+    .LOGO {width:25%}
+    .head1 {width:75%}
+    .head2 {width:75%}
+    .nav {width:100%}
+    .gauche {width:75%}
+    .droite {width:25%}
+    footer {width:100%}  
+}
+
+@media screen and (max-width:850px){
+    .corp {width:100%}
+    .LOGO {width:25%}
+    .head1 {width:75%}
+    .head2 {width:75%}
+    .nav {width:100%}
+    .gauche {width:75%}
+    .droite {width:25%}
+    footer {width:100%}  
 }
