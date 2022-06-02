@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/JardiTou/css/styleformulaire.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="logo">
+                <div class="logo_droit">
+                    <p>Tout le jardin</p>
+
+                </div>
+                <div class="logo_gauche">
+                    <img width="220" height="80" src="/JardiTou/css/img/jarditou_logo_ok.jpg" />
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="nav">
+                <div class="nav_gauche">
+                    <ul>
+                        <li style="font-size:x-large; color:rgb(100, 100, 100)">Jarditou.com</li>
+                        <li><a href="desktop.html">Accueil</a></li>
+                        <li><a href="tableau.html">Tableau</a></li>
+                        <li><a href="Formulaire.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav_droite">
+                    <form>
+                        <input class="recherche" type="text" name="Rechercher" value="Votre promotion" style="color:rgb(196, 194, 194)">
+                        <label class="recherche1" type="text"><a href="#">Rechercher</a></label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--bar nav-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="baniere" class="col- 12">
+                    <img class="img_baniere" width="482" src="/JardiTou/css/img/baniere_ok.jpg" />
+                    <p>* Ces zones sont obligatoires</p>
+                </div>
+            </div>
+        </div>
+        <!--fin baniere-->
+
+        <form method="post" action="#">
+
+            <p class="grostext_form"><strong>Vos coordonnées</strong></p>
+            <label for="Nom">Nom*</label><br>
+            <input type="text" id="Nom" name="Nom" value="Veuillez saisir votre nom"> <br><br>
+
+            <label for="Prénom">Prénom*</label><br>
+            <input type="text" id="Prénom" name="Prénom" value="Veuillez saisir votre prénom"> <br><br>
+
+
+            Sexe*<br><br>
+            <input type="radio" id="Féminin" name="sexe" value="Féminin">
+            <label for="Féminin">Féminin</label>
+
+            <input type="radio" id="Masculin" name="sexe" value="Masculin">
+            <label for="Masculin">Masculin</label>
+
+            <input type="radio" id="Neutre" name="sexe" value="Neutre">
+            <label for="Neutre">Neutre</label><br><br>
+
+            <label for="naissance">Date de Naissance*</label><br>
+            <input type="date" id="naissance" name="naissance"> <br><br>
+
+            <label for="CodePostal">Code Postal*</label><br>
+            <input type="text" id="CodePostal" name="Code Postal"> <br><br>
+
+            <label for="Adresse">Adresse</label><br>
+            <input type="text" id="Adresse" name="Adresse"> <br><br>
+
+            <label for="Ville">Ville</label><br>
+            <input type="text" id="Ville" name="Ville"> <br><br>
+
+            <label for="email">Email*</label><br>
+            <input type="email" id="email" name="mail" value="Dave.loper@afpa.fr"> <br><br>
+
+
+            <p class="grostext_form"><strong>Votre demande</strong></p>
+
+            <p>Sujet*</p>
+            <select name="sujet" id="sujet" value="Veuillez sélectionner un sujet">
+                <option value="sujet1">Sujet 1</option>
+                <option value="sujet1">Sujet 2</option>
+                <option value="sujet1">Sujet 3</option>
+            </select><br><br>
+
+
+
+            <label for="quest"> Votre question* </label>
+            <textarea id="quest" name="questions"></textarea><br><br>
+
+            <input type="checkbox" name="Accepte" value="Accepte" id="Accepte">
+            <label for="Accepte">J'accepte le traitement informatique de se formulaire.</label><br><br>
+
+            <input type="submit" value="Envoyer" class="bouton">
+            <input type="submit" value="Annuler" class="bouton">
+
+        </form> <!--fin formulaire-->
+
+        <!--fin colonne de droite-->
+        <div class="row">
+            <div class="pied" class="col-">
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Horaires</a></li>
+                    <li><a href="#">plan du site</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--fin pied de page-->
+    </div>
+    <!--fin container-->
+</body>
+
+</html>
