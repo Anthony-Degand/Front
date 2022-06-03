@@ -72,28 +72,11 @@ width:100%;
 /*phone*/
 
 #phone {
-    width:28%;
+    width:45%;
     position:relative;
     right:-120px;
     top:80px;
     z-index:1;
-}
-
-#phone2 {
-    width:28%;
-    position:relative;
-    right:-40px;
-    top:230px;
-    z-index:2;
-}
-#phone3 {
-    width:24%;
-    height:329px;
-    position:relative;
-    right:210px;
-    top:217px;
-    z-index:3;
-    border-radius: 9%;
 }
 
 #uxos, #uxos a, #uxos a span {
@@ -121,7 +104,7 @@ width:100%;
     display: inline-block;
     width:400px;
     height:250px;
-    background-color: azure;
+    background-color:white;
     margin: 15px;
     text-align: center;
     font-size:20px;
