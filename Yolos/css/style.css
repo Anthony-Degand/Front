@@ -50,7 +50,6 @@ width:100%;
     height:100%;
     display: inline-block;
     margin:none;
-    clear:both;
     
 
 }
@@ -62,6 +61,30 @@ width:100%;
     
 }
 
+/*chevrons*/
+
+#chevron1 {
+    position:relative;
+    width:25px;
+    top:-560px;
+    left:-450px;
+}
+
+#chevron2 {
+    position:relative;
+    width:28px;
+    top: 687px;
+    left: 948px;
+
+}
+
+/*carré de gauche*/
+
+.carrédegauche {
+    position:absolute;
+    bottom: 35%;
+    margin:10px;
+} 
 /*menuburger*/
 
 #menuburger {
