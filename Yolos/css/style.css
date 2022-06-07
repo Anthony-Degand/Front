@@ -483,7 +483,6 @@ div a:hover {
 /*fin sous-div download*/
 
 /*About Us*/
-
 .aboutus {
     width: 100%;
     height: 800px;
@@ -558,7 +557,7 @@ div a:hover {
 #abouttxtd {
     position: relative;
     top: 250px;
-    left: 100px;
+    margin-left:100px;
     font-weight: 100;
 }
 
@@ -611,6 +610,7 @@ div a:hover {
     left: 14%;
     font-size: 18px;
     font-weight: 600;
+    cursor:pointer;
 }
 
 #boutonsubscribe:hover {
@@ -646,19 +646,18 @@ div a:hover {
     margin-left: 20%;
     position: relative;
     top: 130px;
+    margin-right:15px;
 
 }
 
 #quote {
     position: relative;
     top: 130px;
-    margin-left: 15px;
 }
 
 #pviolet {
     position: relative;
     top: 115px;
-    left: 15px;
     color: #8547ca;
     font-weight: 700;
 }
@@ -666,14 +665,13 @@ div a:hover {
 #pphoto {
     position: relative;
     top: 110px;
-    left: 15px;
     font-weight: 200;
 }
 
 #pphrase {
     position: relative;
     top: 110px;
-    left: 375px;
+    margin-left: 375px;
     font-weight: 200;
 }
 
@@ -706,7 +704,7 @@ div a:hover {
     display:inline-block;
     position:relative;
     top:100px;
-    right: 450px;
+    left: 1400px;
     padding:15px 45px;
 }
 
@@ -717,19 +715,108 @@ div a:hover {
 .contactus {
     width:100%;
     height:800px;
-    background-color: #f8f9fa;
+    background-color: #f2f7fd;
 }
 
 .contactusgauche {
     width:50%;
     height:800px;
-    background-color: aqua;
+    background-color: #f2f7fd;
     float:left;
 }
 
-.contactusgauche {
+.contactusdroite {
     width:50%;
     height:800px;
-    background-color:aquamarine;
+    background-color:#f2f7fd;
     float:right;
 }
+
+#formcontact {
+    float:right;
+    position:relative;
+    top:200px;  
+    margin-right:10%;
+}
+
+#form2 {
+    width:500px;
+    height:38px;
+    font-size:14px;
+    font-weight: 400;
+    color:grey;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+    background-color: #f2f7fd;
+}
+
+#contactp {
+    font-weight: 800;
+    font-size:25px;
+    margin-left:37%;
+    position:relative;
+    top:70px;
+}
+
+#form2submit {
+    font-size:15px;
+    padding: 15px 45px;
+    border-radius:30%;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    color:#fff;
+    background-color: #8c60bd;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#imagecontact {
+    width:55%;
+    position:relative;
+    top:200px;
+
+}
+
+/*fin contact Us*/
+
+.footer {
+    background-color: #363636;
+    width:100%;
+    height:450px;
+    position:relative;
+    top: -30px;
+}
+
+#footertitre {
+    color:#fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    position:relative;
+    top:80px;
+}
+
+.boitesfooter {
+    width:100%;
+    height: 200px;
+    background-color: #363636;
+    position:relative;
+    top:80px;
+    padding-left: 16%;
+}
+
+.casef1, .casef2, .casef3, .casef4 {
+    width:20%;
+    height:200px;
+    background-color: yellow;
+    display: inline-block;
+    
+}
+
+#textfooter1 {
+    color:#fff;
+}
+
