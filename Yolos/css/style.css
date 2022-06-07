@@ -1,79 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 
 .container {
-width:100%;
+    width: 100%;
 }
 
 .premiertroncon {
-    width:100%;
-    height:1000px;
-    background-image:url("/Yolos/css/img/font_yolos.png");
+    width: 100%;
+    height: 1000px;
+    background-image: url("/Yolos/css/img/font_yolos.png");
     background-size: cover;
 }
+
 .top {
-    width:100%;
-    height:100px;
-    z-index:1;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
 }
 
 .nav_gauche {
 
-    float:left;
-    z-index:2;
-    width:10%;
-    height:100%;
-    
-    
+    float: left;
+    z-index: 2;
+    width: 10%;
+    height: 100%;
+
+
 }
 
 .nav_droite {
-    float:right;
-    width:10%;
-    height:100%;
-    
-    z-index:2;
+    float: right;
+    width: 10%;
+    height: 100%;
+
+    z-index: 2;
 
 }
 
 .doublecouleur {
-    width:100%;
-    height:100%;
-    z-index:1;
-    clear:both;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    clear: both;
 }
 
 .blanc {
-    width:49.8%;
-    height:100%;
+    width: 49.8%;
+    height: 100%;
     display: inline-block;
-    margin:none;
-    
+    margin: none;
+
 
 }
+
 .violet {
-    width:49.9%;
-    height:100%;
-    margin:none;
-     float:right;
-    
+    width: 49.9%;
+    height: 100%;
+    margin: none;
+    float: right;
+
 }
 
 /*chevrons*/
 
 #chevron1 {
-    position:relative;
-    width:25px;
-    top:-560px;
-    left:-450px;
+    position: relative;
+    width: 25px;
+    top: -560px;
+    left: -450px;
 }
 
 #chevron2 {
-    position:relative;
-    width:28px;
+    position: relative;
+    width: 28px;
     top: 687px;
     left: 948px;
 
@@ -82,13 +85,13 @@ width:100%;
 /*carré de gauche*/
 
 .carrédegauche {
-    position:absolute;
+    position: absolute;
     bottom: 31%;
-    margin:18px;
-} 
+    margin: 18px;
+}
 
 div a {
-    color:#1d1e31;
+    color: #1d1e31;
 
 }
 
@@ -97,13 +100,17 @@ div a:hover {
 
 }
 
-#carré1,#carré2,#carré3 {
-    width:31px;
-    height:31px;
-    background-color:#1d1e31;
+#carré1,
+#carré2,
+#carré3 {
+    width: 31px;
+    height: 31px;
+    background-color: #1d1e31;
 }
 
-#carré1:hover,#carré2:hover,#carré3:hover {
+#carré1:hover,
+#carré2:hover,
+#carré3:hover {
     background-color: #8547ca;
     cursor: pointer;
 }
@@ -111,31 +118,31 @@ div a:hover {
 /*texte carré blanc*/
 
 #bestdesign {
-    color:#1d1e31;
-    font-size:45px;
-    font-weight:400;
-    position:relative;
-    left:235px;
-    top:100px;
+    color: #1d1e31;
+    font-size: 45px;
+    font-weight: 400;
+    position: relative;
+    left: 235px;
+    top: 100px;
 }
 
 #mobile {
     color: #8547ca;
     font-size: 110px;
-    font-weight:700 bold;
+    font-weight: 700 bold;
     text-transform: uppercase;
-    position:relative;
-    left:235px;
-    top:10px
+    position: relative;
+    left: 235px;
+    top: 10px
 }
 
-#readmore a{
+#readmore a {
     background-color: #1d1e31;
     display: inline;
     padding: 14px 60px;
-    color:rgb(219, 216, 216);
-    position:relative;
-    left:235px;
+    color: rgb(219, 216, 216);
+    position: relative;
+    left: 235px;
     text-decoration: none;
 }
 
@@ -143,32 +150,35 @@ div a:hover {
     background-color: #fefdfc;
     display: inline;
     padding: 14px 60px;
-    color:#1d1e31;
-    position:relative;
-    left:235px;
+    color: #1d1e31;
+    position: relative;
+    left: 235px;
     text-decoration: none;
-    border:1px solid #1d1e31;
+    border: 1px solid #1d1e31;
 }
+
 /*menuburger*/
 
 #menuburger {
-    margin:50px;
-    float:right;
+    margin: 50px;
+    float: right;
 }
 
 /*phone*/
 
 #phone {
-    width:45%;
-    position:relative;
-    right:-120px;
-    top:80px;
-    z-index:1;
+    width: 45%;
+    position: relative;
+    right: -120px;
+    top: 80px;
+    z-index: 1;
 }
 
-#uxos, #uxos a, #uxos a span {
+#uxos,
+#uxos a,
+#uxos a span {
     text-decoration: none;
-    color:#8547ca;
+    color: #8547ca;
     font-size: 24px;
     float: left;
     margin: 18px;
@@ -177,12 +187,12 @@ div a:hover {
 /*amazing*/
 
 .amazing {
-    background-color:#f8f9fa;
-    width:100%;
-    height:600px;
-    display:inline-block;
-    margin-top:100px;
-    margin-bottom:100px;
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 600px;
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -190,22 +200,22 @@ div a:hover {
 
 .amazingblock {
     display: inline-block;
-    width:340px;
-    height:250px;
-    background-color:#f8f9fa;
+    width: 340px;
+    height: 250px;
+    background-color: #f8f9fa;
     margin: 15px;
-    font-size:20px;
+    font-size: 20px;
 
 }
 
 .amazingblock:hover {
     display: inline-block;
-    width:340px;
-    height:250px;
-    background-color:#8547ca;
-    color:#f8f9fa;
+    width: 340px;
+    height: 250px;
+    background-color: #8547ca;
+    color: #f8f9fa;
     margin: 15px;
-    font-size:20px;
+    font-size: 20px;
 
 }
 
@@ -220,62 +230,64 @@ div a:hover {
 
 
 .amazing h1 {
-    padding:20px;
-    font-size:40px;
+    padding: 20px;
+    font-size: 40px;
 }
 
 .petitpoint {
-    float:left;
-    position:relative;
-    left:20px;
-    top:5px;
-    z-index:2;
+    float: left;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    z-index: 2;
 }
 
 .styloplume {
-    float:left;
-    position:relative;
-    left:10px;
-    top:10px;
-    z-index:2;
+    float: left;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
 }
 
 .rectangledef {
-    float:left;
-    position:relative;
-    left:0px;
-    top:30px;
-    z-index:2;
+    float: left;
+    position: relative;
+    left: 0px;
+    top: 30px;
+    z-index: 2;
 }
 
 .Readmore2 {
     background-color: #8c60bd;
     display: inline;
     padding: 14px 45px;
-    color:white;
-    position:relative;
-    text-decoration:none;
-    
+    color: white;
+    position: relative;
+    text-decoration: none;
+
 }
 
 
-.Readmore2:hover  {
-    background-color:#f8f9fa;
+.Readmore2:hover {
+    background-color: #f8f9fa;
     display: inline;
     padding: 14px 45px;
-    color:#8c60bd;
-    position:relative;
+    color: #8c60bd;
+    position: relative;
     text-decoration: none;
-    border:1px solid #8c60bd;
+    border: 1px solid #8c60bd;
 }
 
-.Readmore2 a:hover, .Readmore2:hover {
+.Readmore2 a:hover,
+.Readmore2:hover {
     text-decoration: none;
 }
 
-.Readmore2 a, .Readmore2 {
+.Readmore2 a,
+.Readmore2 {
     text-decoration: none;
-    color:#f8f9fa
+    color: #f8f9fa
 }
 
 /*fin amazing*/
@@ -283,188 +295,441 @@ div a:hover {
 /*download*/
 
 .download {
-    position:relative;
-    top:-30px;
+    position: relative;
+    top: -30px;
 }
 
 .entetedownload {
-    background-color:#fefdfc;
-    width:100%;
-    height:100px;
+    background-color: #fefdfc;
+    width: 100%;
+    height: 100px;
     text-align: center;
-    font-weight:900 lighter;
+    font-weight: 900 lighter;
     font-size: 45px;
-    color:#333456;
+    color: #333456;
 }
 
 .colonnedown1 {
     background-color: #fefdfc;
-    width:40%;
-    height:900px;
-    float:left;
+    width: 40%;
+    height: 900px;
+    float: left;
 }
 
 .colonnedown2 {
     background-color: #fffdfd;
-    width:20%;
-    height:900px;
+    width: 20%;
+    height: 900px;
     display: inline-block;
 }
 
 #imgphone {
-    width:75%;
-    position:relative;
-    left:47px;
-    top:60px;
+    width: 75%;
+    position: relative;
+    left: 47px;
+    top: 60px;
 }
 
 .colonnedown3 {
     background-color: #fefdfc;
-    width:40%;
-    height:900px;
-    float:right;
+    width: 40%;
+    height: 900px;
+    float: right;
 }
 
 /*sous-div*/
 
 .downloadtheapp {
     background-color: #333456;
-    color:white;
-    width:48%;
-    height:270px;
-    position:relative;
-    left:370px;
-    top:100px;
-    padding:20px;
+    color: white;
+    width: 48%;
+    height: 270px;
+    position: relative;
+    left: 370px;
+    top: 100px;
+    padding: 20px;
 }
 
 .eazy {
     background-color: #333456;
-    color:white;
-    width:48%;
-    height:270px;
-    position:relative;
-    left:370px;
-    top:140px;
-    padding:20px;
-    
+    color: white;
+    width: 48%;
+    height: 270px;
+    position: relative;
+    left: 370px;
+    top: 140px;
+    padding: 20px;
+
 }
 
 #readmore3 {
     background-color: #8c60bd;
-    color:#fefdfc;
-    padding-left:50px;
+    color: #fefdfc;
+    padding-left: 50px;
     padding-right: 50px;
-    padding-top:13px;
-    padding-bottom:13px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     text-decoration: none;
-    display:inline;
-    position:relative;
-    top:230px;
-    left:370px;
+    display: inline;
+    position: relative;
+    top: 230px;
+    left: 370px;
 }
 
 #readmore3:hover {
     background-color: #fefdfc;
-    color:#8c60bd;
-    padding-left:50px;
+    color: #8c60bd;
+    padding-left: 50px;
     padding-right: 50px;
-    padding-top:13px;
-    padding-bottom:13px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     text-decoration: none;
-    display:inline;
-    position:relative;
-    top:230px;
-    left:370px;
-    border:1px solid #8c60bd;
+    display: inline;
+    position: relative;
+    top: 230px;
+    left: 370px;
+    border: 1px solid #8c60bd;
 }
 
- .colonnedown1 a, #readmore3 a:hover {
+.colonnedown1 a,
+#readmore3 a:hover {
     text-decoration: none;
 }
 
 .connect {
     background-color: #333456;
-    color:white;
-    width:48%;
-    height:270px;
-    position:relative;
-    left:25px;
-    top:100px;
-    padding:20px;
+    color: white;
+    width: 48%;
+    height: 270px;
+    position: relative;
+    left: 25px;
+    top: 100px;
+    padding: 20px;
 }
 
 .enjoy {
     background-color: #333456;
-    color:white;
-    width:48%;
-    height:270px;
-    position:relative;
-    left:25px;
-    top:140px;
-    padding:20px;
+    color: white;
+    width: 48%;
+    height: 270px;
+    position: relative;
+    left: 25px;
+    top: 140px;
+    padding: 20px;
 }
 
 #dnow {
     background-color: #333456;
-    color:#fefdfc;
-    padding-left:50px;
+    color: #fefdfc;
+    padding-left: 50px;
     padding-right: 50px;
-    padding-top:13px;
-    padding-bottom:13px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     text-decoration: none;
-    display:inline;
-    position:relative;
-    top:230px;
-    left:25px;
+    display: inline;
+    position: relative;
+    top: 230px;
+    left: 25px;
 }
 
 #dnow:hover {
     background-color: #fefdfc;
-    color:#333456;
-    padding-left:50px;
+    color: #333456;
+    padding-left: 50px;
     padding-right: 50px;
-    padding-top:13px;
-    padding-bottom:13px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     text-decoration: none;
-    display:inline;
-    position:relative;
-    top:230px;
-    left:25px;
-    border:1px solid #333456;
+    display: inline;
+    position: relative;
+    top: 230px;
+    left: 25px;
+    border: 1px solid #333456;
 }
 
-.colonnedown3 a, #dnow a:hover {
+.colonnedown3 a,
+#dnow a:hover {
     text-decoration: none;
 }
 
 #cloud {
-    float:left;
-    padding:18px 10px;
-    border:1px solid #fefdfc;
-    margin-right:15px;
+    float: left;
+    padding: 18px 10px;
+    border: 1px solid #fefdfc;
+    margin-right: 15px;
 }
 
 .downloadtheapp p {
     position: relative;
-    color:#fefdfc;
+    color: #fefdfc;
 
 }
 
 .eazy p {
     position: relative;
-    color:#fefdfc;
+    color: #fefdfc;
 }
 
 .connect p {
     position: relative;
-    color:#fefdfc;
+    color: #fefdfc;
 }
 
 .enjoy p {
     position: relative;
-    color:#fefdfc;
+    color: #fefdfc;
 }
 
-/*fin sous-div*/
+/*fin sous-div download*/
 
+/*About Us*/
+
+.aboutus {
+    width: 100%;
+    height: 800px;
+}
+
+.aboutgauche {
+    width: 50%;
+    height: 800px;
+    float: left;
+}
+
+.aboutdroite {
+    width: 50%;
+    height: 800px;
+    float: right;
+}
+
+#abouttitre {
+    position: relative;
+    top: 100px;
+    left: 350px;
+    font-size: xx-large;
+}
+
+#abouttxt {
+    position: relative;
+    top: 550px;
+    left: 350px;
+    font-weight: 100;
+}
+
+#aboutreadmore {
+    position: relative;
+    top: 580px;
+    left: 350px;
+    background-color: #8c60bd;
+    color: #fefdfc;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-decoration: none;
+    display: inline;
+}
+
+#aboutreadmore:hover {
+    position: relative;
+    top: 580px;
+    left: 350px;
+    background-color: #fefdfc;
+    color: #8c60bd;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-decoration: none;
+    display: inline;
+    border: 1px solid #8c60bd;
+}
+
+#aboutreadmore a {
+    text-decoration: none;
+    color: #fefdfc;
+
+}
+
+#aboutreadmore a:hover {
+    text-decoration: none;
+    color: #8c60bd;
+}
+
+#abouttxtd {
+    position: relative;
+    top: 250px;
+    left: 100px;
+    font-weight: 100;
+}
+
+/*fin About Us*/
+
+/*Subscribe*/
+
+.subscribe {
+    background-color: #f2f7fd;
+    width: 100%;
+    height: 350px;
+
+
+}
+
+#subscribeforupdates {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: 120px;
+}
+
+#enteryouremail {
+    border: 1px solid #f8f9fa;
+    width: 50%;
+    height: 50px;
+    position: relative;
+    top: 170px;
+    left: 13%;
+    font-size: 16px;
+    color: grey;
+    font-weight: 300;
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 12%);
+
+}
+
+#boutonsubscribe {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fefdfc;
+    background-color: #8c60bd;
+    border: #8c60bd;
+    width: 20%;
+    height: 50px;
+    position: relative;
+    top: 170px;
+    left: 14%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#boutonsubscribe:hover {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #8c60bd;
+    background-color: #f8f9fa;
+    border: 1px solid #8c60bd;
+}
+
+/*fin subscribe*/
+
+/*Check what people*/
+
+.Check_what {
+    width: 100%;
+    height: 500px;
+    background-color: #fefdfc;
+}
+
+#titrecheck {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: 90px;
+}
+
+#client {
+    float: left;
+    margin-left: 20%;
+    position: relative;
+    top: 130px;
+
+}
+
+#quote {
+    position: relative;
+    top: 130px;
+    margin-left: 15px;
+}
+
+#pviolet {
+    position: relative;
+    top: 115px;
+    left: 15px;
+    color: #8547ca;
+    font-weight: 700;
+}
+
+#pphoto {
+    position: relative;
+    top: 110px;
+    left: 15px;
+    font-weight: 200;
+}
+
+#pphrase {
+    position: relative;
+    top: 110px;
+    left: 375px;
+    font-weight: 200;
+}
+
+#readmore4 {
+    background-color: #8c60bd;
+    color:#fefdfc;
+    border:1px solid #8c60bd;
+    display:inline-block;
+    position:relative;
+    top:100px;
+    left: 1400px;
+    padding:15px 45px;
+    
+}
+
+.Check_what #readmore4 a {
+    color:#fefdfc;
+    text-decoration: none;
+}
+
+.Check_what #readmore4 a:hover {
+    color:#8c60bd;
+    text-decoration: none;
+}
+
+#readmore4:hover {
+    background-color: #fefdfc;
+    color:#8c60bd;
+    border:1px solid #8c60bd;
+    display:inline-block;
+    position:relative;
+    top:100px;
+    right: 450px;
+    padding:15px 45px;
+}
+
+/*fin Check what people*/
+
+/*Contact Us*/
+
+.contactus {
+    width:100%;
+    height:800px;
+    background-color: #f8f9fa;
+}
+
+.contactusgauche {
+    width:50%;
+    height:800px;
+    background-color: aqua;
+    float:left;
+}
+
+.contactusgauche {
+    width:50%;
+    height:800px;
+    background-color:aquamarine;
+    float:right;
+}
