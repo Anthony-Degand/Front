@@ -804,14 +804,14 @@ div a:hover {
     height: 200px;
     background-color: #363636;
     position:relative;
-    top:80px;
-    padding-left: 16%;
+    top:150px;
+    padding-left: 12%;
 }
 
 .casef1, .casef2, .casef3, .casef4 {
     width:20%;
     height:200px;
-    background-color: yellow;
+    background-color: #363636;
     display: inline-block;
     
 }
@@ -820,3 +820,90 @@ div a:hover {
     color:#fff;
 }
 
+#textfooter1 strong {
+    font-size: 20px;
+}
+
+.casef1 {
+    position:relative;
+    top:-88px;
+}
+
+.casef2 {
+    position:relative;
+    top:-88px;
+    color:#fff;
+}
+
+ul strong {
+    font-size: 20px;
+}
+
+#lifooter a{
+    text-decoration: none;
+    color:#fff;
+}
+
+#lifooter a:hover{
+    text-decoration: none;
+    color:#8c60bd;
+}
+
+.casef2 #listfooter {
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+
+.casef3 {
+position:relative;
+top:-107px;
+margin-left:50px;
+}
+
+#textfooter2 {
+color:#fff;
+}
+
+#textfooter2 strong {
+    font-size:20px;
+}
+
+.casef4 {
+    position:relative;
+    top:-67px;
+}
+
+#formp2 {
+    font-size: 20px;
+    color:#fff;
+}
+
+.casef4 form {
+    font-size: 18px;
+}
+
+#caseform2 {
+    font-size: 18px;
+    border:none;
+    color:grey;
+    font-weight: 200;
+
+
+}
+
+#subform2 {
+    padding:10px 30px;
+    background-color: #8c60bd;
+    color:#fff;
+    border:1px solid #8c60bd;
+    font-size:15px;
+    font-weight: 300;
+}
+
+#hruxos {
+    position:relative;
+    width:10%;
+    top:50px;
+}
