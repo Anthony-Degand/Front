@@ -41,13 +41,15 @@
     height:700px;
     background-color: cornflowerblue;
     float:left;
+    border:2px solid black;
 }
 
 .presentation {
     width:40%;
     height:700px;
-    background-color: darkcyan;
+    background-color: #ffffff;
     float:left;
+    border:2px solid black;
 }
 
 .competence {
@@ -55,6 +57,7 @@
     height:700px;
     background-color: goldenrod;
     float:right;
+    border:2px solid black;
 }
 
 .bas {
@@ -69,6 +72,7 @@
     height:700px;
     background-color: mediumpurple;
     float:left;
+    border:2px solid black;
 }
 
 .experience {
@@ -76,6 +80,7 @@
     height:700px;
     background-color: slategray;
     float:left;
+    border:2px solid black;
 }
 
 .footer {
@@ -111,7 +116,7 @@
     vertical-align: middle;
 }
 
-ul,li {
+.barnav,.li_barnav {
     list-style: none;
     display: inline-block;
     position:relative;
@@ -134,4 +139,50 @@ ul,li {
     font-family: 'Questrial', sans-serif;
     color:#bba58a;   
 }
+
+.imageprofil {
+    width:100%;
+    height:700px;
+}
+
+.h1_presentation {
+    text-align: center;
+    position: relative;
+    top:170px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 30px;
+}
+
+.p_presentation {
+    text-align: center;
+    position: relative;
+    top:190px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.lien_presentation {
+    position: relative;
+    top:400px;
+    left:40%;
+    font-family: 'Questrial', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    text-decoration: none;
+    color:#1a1a1a;
+}
+
+.lien_presentation:hover {
+    position: relative;
+    top:400px;
+    left:40%;
+    font-family: 'Questrial', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    text-decoration: none;
+    color:#1a1a1a;
+    opacity: 50%;
+}
+
 
