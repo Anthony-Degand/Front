@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+#header {
+    height:80px;
+}
+
+#h_gauche {
+    background-color:blue;
+    height:80px;
+    float:left;
+}
+
+#h_droit {
+    background-color: blueviolet;
+    height:80px;
+    float:left;
+}
