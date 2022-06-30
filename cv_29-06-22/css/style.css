@@ -1,127 +1,149 @@
 * {
     box-sizing: border-box;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
 
 .header {
-    width:100%;
-    height:100px;
+    width: 100%;
+    height: 100px;
     background-color: antiquewhite;
+    position: fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+}
+
+.header2 {
+    width: 100%;
+    height: 90px;
 }
 
 .nom {
-    width:25%;
-    height:100%;
+    width: 25%;
+    height: 100%;
     background-color: #ded7cf;
-    border:2px solid black;
-    float:left;
+    border: 2px solid black;
+    float: left;
 }
 
 .nav {
-    width:75%;
-    height:100%;
+    width: 75%;
+    height: 100%;
     background-color: #ffffff;
-    border:2px solid black;
-    float:left;
+    border: 2px solid black;
+    float: left;
+
 }
 
 .haut {
-    width:100%;
-    height:700px;
-    background-color: beige;
+    width: 100%;
+    height: 700px;
+    background-color: #ffffff;
 }
 
+
 .photo {
-    width:30%;
-    height:700px;
-    background-color: cornflowerblue;
-    float:left;
-    border:2px solid black;
+    width: 30%;
+    height: 700px;
+    object-fit: cover;
+    float: left;
+    border: 2px solid black;
 }
 
 .presentation {
-    width:40%;
-    height:700px;
+    width: 40%;
+    height: 700px;
     background-color: #ffffff;
-    float:left;
-    border:2px solid black;
+    float: left;
+    border: 2px solid black;
 }
 
 .competence {
-    width:30%;
-    height:700px;
-    background-color: goldenrod;
-    float:right;
-    border:2px solid black;
+    width: 30%;
+    height: 700px;
+    background-color: #1a1a1a;
+    float: right;
+    border: 2px solid black;
 }
 
 .bas {
-    width:100%;
-    height:700px;
-    background-color: lightsteelblue;
-    clear:top;
+    width: 100%;
+    height: 700px;
+    background-color: #ffffff;
+    clear: top;
 }
 
 .mecontacter {
-    width:50%;
-    height:700px;
-    background-color: mediumpurple;
-    float:left;
-    border:2px solid black;
+    width: 50%;
+    height: 700px;
+    background-color: #ded7cf;
+    float: left;
+    border: 2px solid black;
 }
 
 .experience {
-    width:50%;
-    height:700px;
-    background-color: slategray;
-    float:left;
-    border:2px solid black;
+    width: 50%;
+    height: 700px;
+    float: left;
+    border: 2px solid black;
+    background-image: url("/cv_29-06-22/css/img/git_logo.jpg");
+    background-size: contain;
+    overflow: auto;
 }
 
 .footer {
-    width:100%;
-    height:100px;
+    width: 100%;
+    height: 100px;
     background-color: hotpink;
 }
 
 .fgauche {
-    width:33.33%;
-    height:100%;
-    background-color: sienna;
-    float:left;
+    width: 33.33%;
+    height: 100%;
+    background-color: #ffffff;
+    float: left;
+    border: 2px solid black;
 }
 
 .fmillieu {
-    width:33.33%;
-    height:100%;
-    background-color: gainsboro;
-    float:left;
+    width: 33.33%;
+    height: 100%;
+    background-color: #ffffff;
+    float: left;
+    border: 2px solid black;
 }
 
 .fdroit {
-    width:33.33%;
-    height:100%;
-    background-color:mediumturquoise;
-    float:left;
+    width: 33.33%;
+    height: 100%;
+    background-color: #ffffff;
+    float: left;
+    border: 2px solid black;
 }
-/*fin du squelette*/
 
+/*fin du squelette*/
+/*div nom et prénom*/
 .nomprenom {
     text-align: center;
     vertical-align: middle;
 }
+/*bar de navigation*/
+.barnav {
+    background-color: #ffffff;
+    float: right;
+    margin-top: 35px;
+}
 
-.barnav,.li_barnav {
+.barnav,
+.li_barnav {
     list-style: none;
-    display: inline-block;
-    position:relative;
-    left:450px;
-    top:10px;
+    display: inline;
 }
 
 .lien1 {
@@ -129,7 +151,8 @@
     padding-right: 50px;
     font-size: 20px;
     font-family: 'Questrial', sans-serif;
-    color:#1a1a1a;
+    color: #1a1a1a;
+
 }
 
 .lien1:hover {
@@ -137,52 +160,178 @@
     padding-right: 50px;
     font-size: 20px;
     font-family: 'Questrial', sans-serif;
-    color:#bba58a;   
-}
+    color: #bba58a;
 
+}
+/*photo de profil*/
 .imageprofil {
-    width:100%;
-    height:700px;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
 }
-
+/*presentation*/
 .h1_presentation {
     text-align: center;
-    position: relative;
-    top:170px;
+    margin-top: 200px;
     font-family: 'Questrial', sans-serif;
     font-size: 30px;
 }
 
 .p_presentation {
     text-align: center;
-    position: relative;
-    top:190px;
+    margin-top: 50px;
     font-family: 'Questrial', sans-serif;
     font-size: 24px;
     font-weight: 100;
 }
 
 .lien_presentation {
-    position: relative;
-    top:400px;
-    left:40%;
+    margin-left: 40%;
     font-family: 'Questrial', sans-serif;
     font-size: 24px;
     font-weight: 100;
     text-decoration: none;
-    color:#1a1a1a;
+    color: #1a1a1a;
 }
 
 .lien_presentation:hover {
-    position: relative;
-    top:400px;
-    left:40%;
+    margin-left: 40%;
     font-family: 'Questrial', sans-serif;
     font-size: 24px;
     font-weight: 100;
     text-decoration: none;
-    color:#1a1a1a;
+    color: #1a1a1a;
+    opacity: 50%;
+}
+/*compétence*/
+.c1 {
+    width: 100%;
+    height: 100px;
+    margin-top: 10%
+}
+
+.c2 {
+    width: 100%;
+    height: 100px;
+}
+
+.c3 {
+    width: 100%;
+    height: 100px;
+}
+
+.c4 {
+    width: 100%;
+    height: 100px;
+}
+
+.c5 {
+    width: 100%;
+    height: 100px;
+}
+
+.text_comp {
+    margin-left: 10%;
+    vertical-align: middle;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Questrial', sans-serif;
+    display: inline;
+}
+
+.img_comp {
+    width: 50px;
+    height: 50px;
+    margin-left: 30%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.lien_comp {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 100;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Questrial', sans-serif;
+}
+/*me contacter*/
+.p_contact {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Questrial', sans-serif;
+    color: #1a1a1a;
+}
+
+.lien_contact {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 600;
+    margin-left: 40%;
+    font-size: 20px;
+    display: inline;
+}
+
+.lien_contact:hover {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-family: 'Questrial', sans-serif;
+    margin-left: 40%;
+    font-size: 20px;
+    opacity: 50%;
+}
+/*experience ( git hub )*/
+.lien_exp {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Questrial', sans-serif;
+    margin-left: 40%;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.lien_exp:hover {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-family: 'Questrial', sans-serif;
+    font-size: 23px;
     opacity: 50%;
 }
 
+.p_exp {
+    margin-left: 32%;
+    font-size: 100px;
+    font-family: 'Titan One', cursive;
+    color: #341d01;
+    display: inline;
+    -webkit-text-stroke: 3px #ded7cf;
+    object-fit: cover;
+    overflow: hidden;
+}
 
+/*footer*/
+.lienf {
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    color: #1a1a1a;
+    font-weight:lighter;
+}
+
+.lienf:hover {
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    color: #1a1a1a;
+    opacity: 50%;
+}
+
+.pf {
+    text-align: center;
+    vertical-align: middle;
+    margin-top:20px;
+}
