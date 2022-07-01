@@ -1,19 +1,58 @@
-*{
-    box-sizing: border-box;
-}
 
-#header {
-    height:80px;
-}
-
-#h_gauche {
+.h_gauche {
     background-color:blue;
     height:80px;
     float:left;
 }
 
-#h_droit {
+.h_droit {
     background-color: blueviolet;
     height:80px;
     float:left;
+}
+
+.photo {
+    background-color: darkcyan;
+    height:700px;
+    float:left;
+}
+
+.a_propos {
+    background-color: darkgrey;
+    height:700px;
+    float:left;
+}
+
+.competence {
+    background-color: lightcoral;
+    height:700px;
+    float:left;
+}
+
+.mecontacter {
+    background-color: mediumaquamarine;
+    height:700px;
+    float:left;
+    clear:top;
+}
+
+.experience {
+    background-color: wheat;
+    height:700px;
+    float:left;
+}
+
+.f1 {
+    background-color: antiquewhite;
+    height:80px;
+}
+
+.f2 {
+    background-color: rgb(141, 179, 16);
+    height:80px;
+}
+
+.f3 {
+    background-color: rgb(187, 107, 2);
+    height:80px;
 }
