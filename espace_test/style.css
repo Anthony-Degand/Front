@@ -1,90 +1,100 @@
+/*https://www.youtube.com/playlist?list=PL5BcU-_5Oa_o2nmu4eIVjrhxoT3jcQq8F      <-- Comprendre bootstrap */
+/*https://www.youtube.com/watch?v=T8w0mZxc2E0&ab_channel=LeDesignerduWeb        <-- 3 technique pour rendre le texte responsive */
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .container1 {
-    width:100%;
+    width: 100%;
+}
+
+html {
+    --res: calc(0.01 * 10vmin);
 }
 
 .h_gauche {
     background-color: #ded7cf;
     border: 2px solid black;
-    height:80px;
-    float:left;
+    height: 80px;
+    float: left;
 }
 
 .h_droit {
     background-color: #ffffff;
     border: 2px solid black;
-    height:80px;
-    float:left;
+    height: 80px;
+    float: left;
 }
 
 .photo {
     background-color: darkcyan;
-    height:700px;
-    float:left;
+    height: 700px;
+    float: left;
 }
 
 .a_propos {
-    background-color: darkgrey;
-    height:700px;
-    float:left;
+    background-color: #ffffff;
+    border: 2px solid black;
+    height: 700px;
+    float: left;
+    text-align: center;
 }
 
 .competence {
     background-color: lightcoral;
-    height:700px;
-    float:left;
+    height: 700px;
+    float: left;
 }
 
 .mecontacter {
     background-color: mediumaquamarine;
-    height:700px;
-    float:left;
-    clear:top;
+    height: 700px;
+    float: left;
+    clear: top;
 }
 
 .experience {
     background-color: wheat;
-    height:700px;
-    float:left;
+    height: 700px;
+    float: left;
 }
 
 .f1 {
     background-color: antiquewhite;
-    height:80px;
+    height: 80px;
 }
 
 .f2 {
     background-color: rgb(141, 179, 16);
-    height:80px;
+    height: 80px;
 }
 
 .f3 {
     background-color: rgb(187, 107, 2);
-    height:80px;
+    height: 80px;
 }
 
-/*------------------------------------------------------fin du squelette--------------------------------------------------------------------------------------------*/
-
+/*------------------------------------------------------div du nom et prénom----------------------------------------------------------------------------------------*/
 .nomprenom {
     text-align: center;
-    position:relative;
+    position: relative;
     top: 50%;
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);   
+    transform: translateY(-50%);
+    font-size: calc(40 * var(--res));
 }
 
+/*----------------------------------------------------div de la bar de navigation------------------------------------------------------------------------------------*/
 .barnav {
     background-color: #ffffff;
     float: right;
-    position:relative;
+    position: relative;
     top: 50%;
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);   
+    transform: translateY(-50%);
 }
 
 .barnav,
@@ -96,7 +106,7 @@
 .lien1 {
     text-decoration: none;
     padding-right: 50px;
-    font-size: 20px;
+    font-size: calc(20 * var(--res));
     font-family: 'Questrial', sans-serif;
     color: #1a1a1a;
 
@@ -105,14 +115,122 @@
 .lien1:hover {
     text-decoration: none;
     padding-right: 50px;
-    font-size: 20px;
+    font-size: calc(20 * var(--res));
     font-family: 'Questrial', sans-serif;
     color: #bba58a;
 
 }
 
+/* jusqu'à max 764 pixel , je veux les changement ci-dessous */
+
+@media	screen and (max-width: 764px) {
+
+    .h_droit {
+        display: none;
+    }
+
+    .h_gauche {
+        display: none;
+    }
+
+    .h_gauche2 {
+        background-color: #ded7cf;
+        border: 2px solid black;
+        height: 80px;
+        float: left;
+        text-align: center;
+
+    }
+
+    .gauche1 {
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .gauche2 {
+        display: inline-block;
+        width: 78%;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: calc(40 * var(--res));
+    }
+
+    .img_menu_burger {
+        width: 65px;
+    }
+
+}
+
+/* de minimum 765 pixel jusqu'au max, je veux les changement ci-dessous */
+
+@media screen and (min-width: 765px) {
+
+    .h_gauche2 {
+        display: none;
+    }
+}
+
+/*---------------------------------------------------------div de l'image du profil----------------------------------------------------------------------------------------*/
 .imageprofil {
     width: 100%;
     height: 700px;
     object-fit: cover;
+}
+
+/*---------------------------------------------------------div a propos-------------------------------------------------------------------------------------------------------*/
+.h1_presentation {
+    text-align: center;
+    margin-top: 200px;
+    font-family: 'Questrial', sans-serif;
+    font-size: calc(30 * var(--res));
+}
+
+.p_presentation {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Questrial', sans-serif;
+    font-size: calc(24 * var(--res));
+    font-weight: 100;
+}
+
+.lien_presentation {
+
+    font-family: 'Questrial', sans-serif;
+    font-size: calc(24 * var(--res));
+    font-weight: 100;
+    text-decoration: none;
+    color: #1a1a1a;
+    position: relative;
+    top: 20%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.lien_presentation:hover {
+
+    font-family: 'Questrial', sans-serif;
+    font-size: calc(24 * var(--res));
+    font-weight: 100;
+    text-decoration: none;
+    color: #1a1a1a;
+    opacity: 50%;
+    top: 20%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.span_presentation {
+    margin-top: 600px;
 }
