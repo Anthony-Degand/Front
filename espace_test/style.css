@@ -1,5 +1,6 @@
 /*https://www.youtube.com/playlist?list=PL5BcU-_5Oa_o2nmu4eIVjrhxoT3jcQq8F      <-- Comprendre bootstrap */
 /*https://www.youtube.com/watch?v=T8w0mZxc2E0&ab_channel=LeDesignerduWeb        <-- 3 technique pour rendre le texte responsive */
+/*https://www.youtube.com/watch?v=pI9tS6P_RdY&ab_channel=DgeoDev                <-- menu burger */
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -234,3 +235,85 @@ html {
 .span_presentation {
     margin-top: 600px;
 }
+
+
+
+
+
+
+
+
+/*création d'un menu burger
+.img_menu_burger {
+    width: 45px;
+    height: 45px;
+    border:none;
+    background:transparent;
+    cursor: pointer;
+    position: relative;
+    top:50%;
+    transform:translateY(-70%);
+}
+ les barres du menu burger
+.bar {
+    display: block;
+    width:45px;
+    height:4px;
+    background:#1a1a1a;
+    border-radius: 3px;
+}
+
+.bar::before, .bar::after {
+    width:45px;
+    height:4px;
+    background:#1a1a1a;
+    border-radius: 3px;
+    position:absolute;
+    left:0;
+    content:"";
+}
+
+.bar::before {
+    transform:translateY(-12px);
+}
+
+.bar::after {
+    transform:translateY(12px);
+}*/
+
+
+ /*le menu ouvert
+
+ .navbar__links {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:calc(100vh - 65px);
+    position: absolute;
+    top: 65px;
+    right:0;
+    background-color: white;
+}
+
+
+.show-nav .navbar__links {
+
+}
+.navbar__link > a {
+    display: block;
+    padding:1rem;
+    font-size: 1.6rem;
+    transition:all .4s ease-in-out;
+}
+
+.navbar__link > a:hover {
+    padding-left: 2rem;
+    letter-spacing: 5px;
+}
+
+
+.navbar__link > a {
+    text-decoration: none;
+    color:#1a1a1a;
+}
+}*/
