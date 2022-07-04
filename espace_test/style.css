@@ -1,0 +1,137 @@
+/* le tuto : https://www.youtube.com/watch?v=bUzXug3ep94 */
+
+* {
+    margin:0; /*régler l'enssembles des marges à 0 de base */
+    padding:0; /* régler tous les padding à 0 de base */
+    box-sizing: border-box; /* indique au navigateur de prendre en compte la bordure et le remplissage (padding) dans la valeur définie avec width et height. */
+}
+
+html {
+    font-size: 16px; /*tous mes element html auront une taille de 16 pixels de base*/
+}
+
+body {
+    font-family: sans-serif; /* touts les elements prennent la police sans-serif. */
+}
+
+header {
+    position:absolute; /* calcul la position des elements par rapport au bord de la div */
+    width:100%;
+    height:8vh;
+    top:0;
+    left:0;
+    background:#000;
+    color:white;
+    padding: 0 2rem;
+    background: transparent;
+}
+
+nav {
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between; /* Les éléments sont répartis équitablement. Le bord du premier est aligné sur le début du conteneur et la fin du dernier est alignée sur la fin du conteneur */
+    align-items: center; /* aligner des elements par rapport a leur conteneur */
+}
+
+.logo {
+    font-size: 2rem; /* agrandir mon logo */
+}
+
+.toggle {
+    display:none; /* faire disparaitre mon toggle dans le flux normal */
+}
+
+.menu {
+    display: flex; /* la position des elements pourra étre modifier */
+    justify-content: space-between; /* Les éléments sont répartis équitablement. Le bord du premier est aligné sur le début du conteneur et la fin du dernier est alignée sur la fin du conteneur */
+    align-items: center;
+    list-style: none;
+    width:800px;
+}
+
+.menu li a {
+    color:white; /* mettre la couleur de mes liens en blanc */
+    text-decoration: none;  /* retirer le surlignage */
+}
+
+.btn_connection {
+    border:2px solid pink;
+    background:transparent;
+    color:#fff;
+    font-size: 1rem;
+    padding:0.5rem 1rem;
+    border-radius: 20px; /* arrondir les bords */
+}
+
+.btn_inscription {
+    border:0;
+    background:pink;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.hero {
+    height:100vh;   /*une page de 100 view height <-- (unitée de mesure)*/
+    background-color: grey; /*avec un font gris */
+}
+
+@media all and (max-width: 991px) {
+    .toggle {
+        display: block; /*afficher mes icons de menu burger*/
+        font-size: 2rem; /*agrandir les icons à 2rem <-- (unitée de mesure)*/
+        cursor:pointer; /*afficher une main au survol de mon icon pour indiqué qu'il est cliquable*/
+        position:relative; /* L'élément est positionné dans le flux normal du document puis décalé, par rapport à lui-même selon les valeurs fournies par top, right, bottom et left. Le décalage n'a pas d'impact sur la position des autres éléments */
+        z-index : 20; /* mettre en avant le calc de mon menu toggle */
+    }
+
+    .logo {
+        position:relative; /* L'élément est positionné dans le flux normal du document puis décalé, par rapport à lui-même selon les valeurs fournies par top, right, bottom et left. Le décalage n'a pas d'impact sur la position des autres éléments */
+        z-index : 20; /* mettre en avant le calc de mon logo */
+    }
+
+    .toggle .ouvrir {
+        display:block; /*afficher mon icon ouvrir*/
+    }
+
+    .toggle .fermer {
+        display:none; /*cacher mon icon fermer */
+    }
+
+    .open .ouvrir {
+        display:none;   /*quand le menu est ouvert cacher mon icon ouvrir*/
+    }
+
+    .open .fermer {
+        display:block;  /*quand le menu est ouvert afficher mon icon fermer*/
+    }
+
+    .menu {
+        position:absolute; /* calcul les positions par rapport au bord de la div */
+        top:0;  /* à 0px du haut de ma div */
+        left:0; /* et 0px du bord gauche de ma div */
+        width:100%; /* il prend 100% de la largeur de ma div */
+        height:100vh; /* et 100vh de hauteur */
+        background: #000; /*avec un fond noir */
+        flex-direction:column; /* passer la navbar de horizontal à vertical */
+        padding: 2rem;
+        justify-content:space-around; /* Les éléments sont répartis équitablement. À chaque extrémité, entre le bord du conteneur et le premier/dernier élément */
+        transform:translateX(-100%); /* de base je veux que mon menu soit décaler de toute sa largeur vers la gauche (hors de l'écran) */
+        transition:transform 1s; /* je met une transition de une seconde au clic pour donner un effet a mon menu */
+
+    }
+
+    .menu li a, .btn_inscription, .btn_connection {
+        font-size: 2rem; /* je monte la taille de la police dans mon menu déroulant */
+    }
+
+    
+
+    .open .menu {
+        transform:translateX(0); /* si le menu est ouvert il revient a sa position de départ */
+
+    }
+
+
+}
