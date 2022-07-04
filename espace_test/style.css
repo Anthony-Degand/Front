@@ -14,6 +14,8 @@ html {
     --res: calc(0.01 * 10vmin);
 }
 
+/*---------------------------------------squelette---------------------------------------------------------------*/
+
 .h_gauche {
     background-color: #ded7cf;
     border: 2px solid black;
@@ -32,6 +34,7 @@ html {
     background-color: darkcyan;
     height: 700px;
     float: left;
+    border: 2px solid black;
 }
 
 .a_propos {
@@ -40,40 +43,59 @@ html {
     height: 700px;
     float: left;
     text-align: center;
+    position: relative;
 }
 
 .competence {
-    background-color: lightcoral;
     height: 700px;
     float: left;
+    background-color: #1a1a1a;
+    border: 2px solid black;
+    position: relative;
+    text-align: center;
 }
 
 .mecontacter {
-    background-color: mediumaquamarine;
+    background-color: #ded7cf;
     height: 700px;
     float: left;
     clear: top;
+    position: relative;
+    border: 2px solid black;
 }
 
 .experience {
-    background-color: wheat;
+    background-image: url("/cv_29-06-22/css/img/git_logo.jpg");
+    background-size: 1000px;
+    background-position: 50%;
     height: 700px;
     float: left;
+    position: relative;
+    border: 2px solid black;
 }
 
 .f1 {
-    background-color: antiquewhite;
+    background-color: #ffffff;
     height: 80px;
+    border: 2px solid black;
+    position: relative;
+    text-align: center;
 }
 
 .f2 {
-    background-color: rgb(141, 179, 16);
+    background-color: #ffffff;
     height: 80px;
+    border: 2px solid black;
+    position: relative;
+    text-align: center;
 }
 
 .f3 {
-    background-color: rgb(187, 107, 2);
+    background-color: #ffffff;
     height: 80px;
+    border: 2px solid black;
+    position: relative;
+    text-align: center;
 }
 
 /*------------------------------------------------------div du nom et prénom----------------------------------------------------------------------------------------*/
@@ -170,6 +192,12 @@ html {
         width: 65px;
     }
 
+    .mecontacter .p_contact,
+    .mecontacter .lien_contact,
+    .mecontacter .lien_contact:hover {
+        font-size: 20px;
+    }
+
 }
 
 /* de minimum 765 pixel jusqu'au max, je veux les changement ci-dessous */
@@ -191,7 +219,7 @@ html {
 /*---------------------------------------------------------div a propos-------------------------------------------------------------------------------------------------------*/
 .h1_presentation {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 180px;
     font-family: 'Questrial', sans-serif;
     font-size: calc(30 * var(--res));
 }
@@ -211,11 +239,10 @@ html {
     font-weight: 100;
     text-decoration: none;
     color: #1a1a1a;
-    position: relative;
-    top: 20%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    transform: translateX(-50%);
 }
 
 .lien_presentation:hover {
@@ -226,14 +253,223 @@ html {
     text-decoration: none;
     color: #1a1a1a;
     opacity: 50%;
-    top: 20%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    transform: translateX(-50%);
 }
 
 .span_presentation {
     margin-top: 600px;
+}
+
+/*taille des écrit en format smartphone*/
+
+@media screen and (max-width: 768px) {
+
+    .h1_presentation {
+        font-size: 30px;
+    }
+
+    .p_presentation {
+        font-size: 24px;
+    }
+
+    .lien_presentation {
+        font-size: 24px;
+    }
+
+    .lien_presentation:hover {
+        font-size: 24px;
+    }
+
+
+    .competence .lien_comp,
+    .competence .text_comp {
+        font-size: 24px;
+    }
+
+}
+
+/*---------------------------------------------image poste de travail--------------------------------------------------------------------------*/
+
+.imagebureau {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+/*---------------------------------------------------compétence--------------------------------------------------------------------------------------*/
+.c1 {
+    position: relative;
+    height: 100px;
+    margin-top: 10%;
+    text-align: center;
+    transform: translateY(-50%);
+    transform: translateX(-5%);
+
+}
+
+.c2 {
+    height: 100px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50%);
+    transform: translateX(-5%);
+}
+
+.c3 {
+    height: 100px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50%);
+    transform: translateX(-5%);
+}
+
+.c4 {
+    height: 100px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50%);
+    transform: translateX(-5%);
+}
+
+.c5 {
+    height: 100px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50%);
+    transform: translateX(-5%);
+}
+
+.text_comp {
+    font-size: calc(30 * var(--res));
+    color: #ffffff;
+    font-family: 'Questrial', sans-serif;
+    display: inline;
+}
+
+.img_comp {
+    width: 5vh;
+    height: 5vh;
+    float: left;
+    margin-left: 40px;
+    object-fit: cover;
+}
+
+.lien_comp {
+    text-align: center;
+    font-size: calc(24 * var(--res));
+
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Questrial', sans-serif;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*-----------------------------------------me contacter---------------------------------------*/
+
+.p_contact {
+    text-align: center;
+    font-size: calc(24 * var(--res));
+    font-family: 'Questrial', sans-serif;
+    color: #1a1a1a;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lien_contact {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 600;
+    font-size: calc(20 * var(--res));
+    display: inline;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lien_contact:hover {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-family: 'Questrial', sans-serif;
+    font-size: calc(20 * var(--res));
+    opacity: 50%;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*-----------------------------------------experience---------------------------------------*/
+
+.lien_exp {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Questrial', sans-serif;
+    font-size: 23px;
+    font-weight: 200;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lien_exp:hover {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Questrial', sans-serif;
+    font-size: 23px;
+    opacity: 50%;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p_exp {
+    font-size: 100px;
+    font-family: 'Titan One', cursive;
+    color: #341d01;
+    display: inline;
+    -webkit-text-stroke: 3px #ded7cf;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*-------------------------------------------------footer-----------------------------------------------------------------------------------------*/
+.lienf {
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    color: #1a1a1a;
+    font-weight: lighter;
+    position: absolute;
+    top: 15%;
+    transform: translateX(-50%);
+}
+
+.lienf:hover {
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    color: #1a1a1a;
+    opacity: 50%;
+    position: absolute;
+    top: 15%;
+    transform: translateX(-50%);
 }
 
 
@@ -282,7 +518,7 @@ html {
 }*/
 
 
- /*le menu ouvert
+/*le menu ouvert
 
  .navbar__links {
     display: flex;
