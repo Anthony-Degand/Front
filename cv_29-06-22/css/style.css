@@ -1,138 +1,174 @@
+/*https://www.youtube.com/playlist?list=PL5BcU-_5Oa_o2nmu4eIVjrhxoT3jcQq8F      <-- Comprendre bootstrap */
+/*https://www.youtube.com/watch?v=T8w0mZxc2E0&ab_channel=LeDesignerduWeb        <-- 3 technique pour rendre le texte responsive */
+/*https://www.youtube.com/watch?v=pI9tS6P_RdY&ab_channel=DgeoDev                <-- menu burger */
+
 * {
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
+.container1 {
     width: 100%;
-    height: 100px;
-    background-color: antiquewhite;
-    position: fixed;
-    top:0px;
-    left:0px;
-    right:0px;
-    bottom:0px;
 }
 
-.header2 {
-    width: 100%;
-    height: 90px;
+html {
+    --res: calc(0.01 * 10vmin);
 }
 
-.nom {
-    width: 25%;
-    height: 100%;
+/*---------------------------------------squelette---------------------------------------------------------------*/
+
+.h_gauche {
     background-color: #ded7cf;
     border: 2px solid black;
+    height: 80px;
     float: left;
 }
 
-.nav {
-    width: 75%;
-    height: 100%;
+.h_droit {
     background-color: #ffffff;
     border: 2px solid black;
+    height: 80px;
     float: left;
-
+    position: relative;
 }
-
-.haut {
-    width: 100%;
-    height: 700px;
-    background-color: #ffffff;
-}
-
 
 .photo {
-    width: 30%;
+    background-color: darkcyan;
     height: 700px;
-    object-fit: cover;
     float: left;
     border: 2px solid black;
 }
 
-.presentation {
-    width: 40%;
-    height: 700px;
+.a_propos {
     background-color: #ffffff;
-    float: left;
     border: 2px solid black;
+    height: 700px;
+    float: left;
+    text-align: center;
+    position: relative;
 }
 
 .competence {
-    width: 30%;
     height: 700px;
+    float: left;
     background-color: #1a1a1a;
-    float: right;
     border: 2px solid black;
-}
-
-.bas {
-    width: 100%;
-    height: 700px;
-    background-color: #ffffff;
-    clear: top;
+    position: relative;
+    text-align: center;
 }
 
 .mecontacter {
-    width: 50%;
-    height: 700px;
     background-color: #ded7cf;
+    height: 700px;
     float: left;
+    clear: top;
+    position: relative;
     border: 2px solid black;
 }
 
 .experience {
-    width: 50%;
+    background-image: url("/cv_29-06-22/css/img/git_logo.jpg");
+    background-size: 1000px;
+    background-position: 50%;
     height: 700px;
     float: left;
+    position: relative;
     border: 2px solid black;
-    background-image: url("/cv_29-06-22/css/img/git_logo.jpg");
-    background-size: contain;
-    overflow: auto;
 }
 
-.footer {
-    width: 100%;
-    height: 100px;
-    background-color: hotpink;
-}
-
-.fgauche {
-    width: 33.33%;
-    height: 100%;
+.f1 {
     background-color: #ffffff;
-    float: left;
+    height: 80px;
     border: 2px solid black;
+    position: relative;
+    text-align: center;
 }
 
-.fmillieu {
-    width: 33.33%;
-    height: 100%;
+.f2 {
     background-color: #ffffff;
-    float: left;
+    height: 80px;
     border: 2px solid black;
+    position: relative;
+    text-align: center;
 }
 
-.fdroit {
-    width: 33.33%;
-    height: 100%;
+.f3 {
     background-color: #ffffff;
-    float: left;
+    height: 80px;
     border: 2px solid black;
+    position: relative;
+    text-align: center;
 }
 
-/*fin du squelette*/
-/*div nom et prénom*/
+/*------------------------------------------------------div du nom et prénom----------------------------------------------------------------------------------------*/
 .nomprenom {
     text-align: center;
-    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: calc(40 * var(--res));
 }
-/*bar de navigation*/
+
+/*----------------------------------------------------div de la bar de navigation------------------------------------------------------------------------------------*/
+
+
+.menu_burger {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    border-radius: 20%;
+}
+
+.mb01 {
+    width: 35px;
+    height: 5px;
+    background-color: #1a1a1a;
+    position: absolute;
+    left: 3px;
+    top: 20px;
+}
+
+.mb02 {
+    width: 35px;
+    height: 5px;
+    background-color: #1a1a1a;
+    position: absolute;
+    left: 3px;
+    top: 8px;
+}
+
+.mb03 {
+    width: 35px;
+    height: 5px;
+    background-color: #1a1a1a;
+    position: absolute;
+    left: 3px;
+    bottom: 5px;
+}
+
+.menub {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
 .barnav {
     background-color: #ffffff;
     float: right;
-    margin-top: 35px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .barnav,
@@ -144,7 +180,7 @@
 .lien1 {
     text-decoration: none;
     padding-right: 50px;
-    font-size: 20px;
+    font-size: calc(20 * var(--res));
     font-family: 'Questrial', sans-serif;
     color: #1a1a1a;
 
@@ -153,110 +189,260 @@
 .lien1:hover {
     text-decoration: none;
     padding-right: 50px;
-    font-size: 20px;
+    font-size: calc(20 * var(--res));
     font-family: 'Questrial', sans-serif;
     color: #bba58a;
 
 }
-/*photo de profil*/
+
+/* jusqu'à max 764 pixel , je veux les changement ci-dessous */
+
+@media	screen and (max-width: 764px) {
+
+    .h_gauche .nomprenom {
+        font-size: 30px;
+    }
+
+    .h_gauche2 {
+        background-color: #ded7cf;
+        border: 2px solid black;
+        height: 80px;
+        float: left;
+        text-align: center;
+
+    }
+
+    .gauche1 {
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .gauche2 {
+        display: inline-block;
+        width: 78%;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: calc(40 * var(--res));
+    }
+
+    .img_menu_burger {
+        width: 65px;
+    }
+
+    .mecontacter .p_contact,
+    .mecontacter .lien_contact,
+    .mecontacter .lien_contact:hover {
+        font-size: 20px;
+    }
+
+    .barnav,
+    .libarnav,
+    .lien1,
+    .lien1:hover {
+        display: none;
+    }
+
+}
+
+/* de minimum 765 pixel jusqu'au max, je veux les changement ci-dessous */
+
+@media screen and (min-width: 765px) {
+
+    .h_gauche2 {
+        display: none;
+    }
+
+/*-----------------------------------------------------------------menu burger----------------------------------------------------------------------------------------*/
+    .menu_burger,
+    .mb01,
+    .mb02,
+    .mb03,
+    .menub {
+        display: none;
+    }
+}
+
+/*---------------------------------------------------------div de l'image du profil----------------------------------------------------------------------------------------*/
 .imageprofil {
     width: 100%;
     height: 700px;
     object-fit: cover;
 }
-/*presentation*/
+
+/*---------------------------------------------------------div a propos-------------------------------------------------------------------------------------------------------*/
 .h1_presentation {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 180px;
     font-family: 'Questrial', sans-serif;
-    font-size: 30px;
+    font-size: calc(30 * var(--res));
 }
 
 .p_presentation {
     text-align: center;
     margin-top: 50px;
     font-family: 'Questrial', sans-serif;
-    font-size: 24px;
+    font-size: calc(24 * var(--res));
     font-weight: 100;
 }
 
 .lien_presentation {
-    margin-left: 40%;
+
     font-family: 'Questrial', sans-serif;
-    font-size: 24px;
+    font-size: calc(24 * var(--res));
     font-weight: 100;
     text-decoration: none;
     color: #1a1a1a;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    transform: translateX(-50%);
 }
 
 .lien_presentation:hover {
-    margin-left: 40%;
+
     font-family: 'Questrial', sans-serif;
-    font-size: 24px;
+    font-size: calc(24 * var(--res));
     font-weight: 100;
     text-decoration: none;
     color: #1a1a1a;
     opacity: 50%;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    transform: translateX(-50%);
 }
-/*compétence*/
-.c1 {
+
+.span_presentation {
+    margin-top: 600px;
+}
+
+/*taille des écrit en format smartphone*/
+
+@media screen and (max-width: 768px) {
+
+    .h1_presentation {
+        font-size: 30px;
+    }
+
+    .p_presentation {
+        font-size: 24px;
+    }
+
+    .lien_presentation {
+        font-size: 24px;
+    }
+
+    .lien_presentation:hover {
+        font-size: 24px;
+    }
+
+
+    .competence .lien_comp,
+    .competence .text_comp {
+        font-size: 24px;
+    }
+
+}
+
+/*---------------------------------------------image poste de travail--------------------------------------------------------------------------*/
+
+.imagebureau {
     width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+/*---------------------------------------------------compétence--------------------------------------------------------------------------------------*/
+.c1 {
+    position: relative;
     height: 100px;
-    margin-top: 10%
+    margin-top: 10%;
+    text-align: center;
+    transform: translateY(-50%);
+    transform: translateX(-5%);
+
 }
 
 .c2 {
-    width: 100%;
     height: 100px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50%);
+    transform: translateX(-5%);
 }
 
 .c3 {
-    width: 100%;
     height: 100px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50%);
+    transform: translateX(-5%);
 }
 
 .c4 {
-    width: 100%;
     height: 100px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50%);
+    transform: translateX(-5%);
 }
 
 .c5 {
-    width: 100%;
     height: 100px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50%);
+    transform: translateX(-5%);
 }
 
 .text_comp {
-    margin-left: 10%;
-    vertical-align: middle;
-    font-size: 30px;
+    font-size: calc(30 * var(--res));
     color: #ffffff;
     font-family: 'Questrial', sans-serif;
     display: inline;
 }
 
 .img_comp {
-    width: 50px;
-    height: 50px;
-    margin-left: 30%;
-    vertical-align: middle;
+    width: 5vh;
+    height: 5vh;
+    float: left;
+    margin-left: 40px;
     object-fit: cover;
 }
 
 .lien_comp {
-    vertical-align: middle;
     text-align: center;
-    font-size: 24px;
-    font-weight: 100;
+    font-size: calc(24 * var(--res));
+
     text-decoration: none;
     color: #ffffff;
     font-family: 'Questrial', sans-serif;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
 }
-/*me contacter*/
+
+/*-----------------------------------------me contacter---------------------------------------*/
+
 .p_contact {
     text-align: center;
-    font-size: 24px;
+    font-size: calc(24 * var(--res));
     font-family: 'Questrial', sans-serif;
     color: #1a1a1a;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .lien_contact {
@@ -264,39 +450,53 @@
     color: #1a1a1a;
     font-family: 'Questrial', sans-serif;
     font-weight: 600;
-    margin-left: 40%;
-    font-size: 20px;
+    font-size: calc(20 * var(--res));
     display: inline;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .lien_contact:hover {
     text-decoration: none;
     color: #1a1a1a;
     font-family: 'Questrial', sans-serif;
-    margin-left: 40%;
-    font-size: 20px;
+    font-size: calc(20 * var(--res));
     opacity: 50%;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
-/*experience ( git hub )*/
+
+/*-----------------------------------------experience---------------------------------------*/
+
 .lien_exp {
     text-decoration: none;
     color: #ffffff;
     font-family: 'Questrial', sans-serif;
-    margin-left: 40%;
     font-size: 23px;
-    font-weight: 600;
+    font-weight: 200;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .lien_exp:hover {
     text-decoration: none;
-    color: #1a1a1a;
+    color: #ffffff;
     font-family: 'Questrial', sans-serif;
     font-size: 23px;
     opacity: 50%;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .p_exp {
-    margin-left: 32%;
     font-size: 100px;
     font-family: 'Titan One', cursive;
     color: #341d01;
@@ -304,16 +504,23 @@
     -webkit-text-stroke: 3px #ded7cf;
     object-fit: cover;
     overflow: hidden;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/*footer*/
+/*-------------------------------------------------footer-----------------------------------------------------------------------------------------*/
 .lienf {
     text-decoration: none;
     font-size: 40px;
     text-align: center;
     font-family: 'Questrial', sans-serif;
     color: #1a1a1a;
-    font-weight:lighter;
+    font-weight: lighter;
+    position: absolute;
+    top: 15%;
+    transform: translateX(-50%);
 }
 
 .lienf:hover {
@@ -323,10 +530,7 @@
     font-family: 'Questrial', sans-serif;
     color: #1a1a1a;
     opacity: 50%;
-}
-
-.pf {
-    text-align: center;
-    vertical-align: middle;
-    margin-top:20px;
+    position: absolute;
+    top: 15%;
+    transform: translateX(-50%);
 }

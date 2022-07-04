@@ -1,0 +1,88 @@
+.container1 {
+    width: 100%;
+}
+
+.parent01 {
+    display:grid;
+    grid-template-columns: 30% 70%;
+}
+
+.enfant01 {
+background-color: aqua;
+height:100px;
+}
+
+.enfant02 {
+    background-color: bisque;
+    height:100px;
+    position: relative;
+}
+
+.parent02 {
+    display:grid;
+    grid-template-columns: 30% 30% 40%;
+}
+
+.a{
+    background-color:darkslategray;
+    height:700px;
+}
+
+.b{
+    background-color: cornflowerblue;
+    height:700px;
+}
+
+.c{
+    background-color:dimgray;
+    height:700px;
+}
+
+/*----------------------------------squelette-----------------------------------------*/
+
+ul {
+    list-style: none;
+    margin:0%;
+    padding:0%;
+    display:grid;
+    display: inline-block;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+li a {
+    text-decoration: none;
+    color:black;
+    background-color: #ffffff;
+    border:1px solid black;
+    padding-left:130px;
+    padding-right:130px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin:0%;
+    position:relative;
+    top:35%;
+    transform:translateX(-50%)
+}
+
+li a:hover {
+    text-decoration: none;
+    color:#ffffff;
+    background-color: #1a1a1a;
+    border:1px solid #ffffff;
+    padding-left:130px;
+    padding-right:130px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin:0%;
+    position:relative;
+    top:35%;
+    transform:translateX(-50%)
+}
+
+li {
+    display: inline-block;
+    position:relative;
+    top:50px;
+    height:50px;
+}
