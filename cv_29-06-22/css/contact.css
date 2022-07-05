@@ -7,56 +7,67 @@
     padding:0px;
 }
 
-.container {
+.container1 {
     width: 100%;
-    height: 100%;
+    letter-spacing:3px;
+    /*background-image: url(");
+    background-repeat: no-repeat;
+    background-size: 100%;*/
 }
 
-.header {
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+html {
+    --res: calc(0.01 * 10vmin);
+    font-size: 16px;
 }
 
-.header2 {
-    width: 100%;
-    height: 100px;
-}
+/*---------------------------------------squelette---------------------------------------------------------------*/
 
-.nom {
-    width: 25vw;
-    height: 100%;
+.h_gauche {
     background-color: #ded7cf;
     border: 2px solid black;
+    height: 80px;
     float: left;
 }
 
-.nav {
-    width: 75%;
-    height: 100%;
+.h_droit {
     background-color: #ffffff;
     border: 2px solid black;
+    height: 80px;
     float: left;
-
+    position: relative;
 }
 
-/*fin du squelette*/
-/*div nom et prénom*/
+/*------------------------------------------------------div du nom et prénom----------------------------------------------------------------------------------------*/
 .nomprenom {
     text-align: center;
-    vertical-align: middle;
-    width:25vw;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: calc(40 * var(--res));
+}
+/*----------------------------------------------------------ecriture menu au format smartphone----------------------------------------------*/
+.petit_menu {
+    font-family: 'Questrial', sans-serif;
+    margin-left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 24px;
 }
 
-/*bar de navigation*/
+/*----------------------------------------------------------fin ecriture menu au format smartphone----------------------------------------------*/
+/*------------------------------------------------------barre de navigation-------------------------------------------------------------------*/
 .barnav {
     background-color: #ffffff;
     float: right;
-    margin-top: 35px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .barnav,
@@ -68,7 +79,7 @@
 .lien1 {
     text-decoration: none;
     padding-right: 50px;
-    font-size: 20px;
+    font-size: calc(20 * var(--res));
     font-family: 'Questrial', sans-serif;
     color: #1a1a1a;
 
@@ -77,72 +88,154 @@
 .lien1:hover {
     text-decoration: none;
     padding-right: 50px;
-    font-size: 20px;
+    font-size: calc(20 * var(--res));
     font-family: 'Questrial', sans-serif;
     color: #bba58a;
 
 }
 
-/*fin de la bar nav*/
+/*------------------------------------------------------fin de la barre de navigation-------------------------------------------------------------------*/
 
-/*début du formulaire*/
+/* jusqu'à max 764 pixel , je veux les changement ci-dessous */
+
+@media	screen and (max-width: 764px) {
+
+    .toggle .fermer {
+        display: none;
+    }
+
+    .toggle .ouvrir {
+        position: absolute;
+       right:5%;
+       top:50%;
+       transform:translateY(-50%);
+       font-size: 45px;
+       cursor: pointer;
+    }
+
+    .h_gauche .nomprenom {
+        font-size: 30px;
+    }
+
+    .h_gauche2 {
+        background-color: #ded7cf;
+        border: 2px solid black;
+        height: 80px;
+        float: left;
+        text-align: center;
+
+    }
+
+    .gauche1 {
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .gauche2 {
+        display: inline-block;
+        width: 78%;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: calc(40 * var(--res));
+    }
+
+    .mecontacter .p_contact,
+    .mecontacter .lien_contact,
+    .mecontacter .lien_contact:hover {
+        font-size: 20px;
+    }
+
+    .h_droit {
+        position: relative;
+    }
+
+    .open .fermer {
+        display: block;
+        z-index: 25;
+        position: absolute;
+        top: -120%;
+        right: 0%;
+        padding: 2rem;
+        font-size: 55px;
+        cursor: pointer;
+        /*quand le menu est ouvert afficher mon icon fermer*/
+    }
+
+    .barnav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -105%;
+        text-align: center;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
+        padding: 1rem;
+        justify-content: space-around;
+        z-index: 19;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+
+    .open .barnav {
+        transform:translateX(0%); /* si le menu est ouvert il revient a sa position de départ */
+    }
+
+    .barnav li a,
+    .barnav li a:hover {
+        font-size: 2rem;
+    }
+
+}
+
+/* de minimum 765 pixel jusqu'au max, je veux les changement ci-dessous */
+
+@media screen and (min-width: 765px) {
+
+    .h_gauche2 {
+        display: none;
+    }
+
+    .toggle .fermer,.toggle .ouvrir {
+        display:none;
+    }
+
+    .petit_menu {
+        display:none;
+    }
+
+}
+
+/*-- fin des media querry --*/
 
 .contact {
-    width: 100%;
-    height: 80vh;
+    width: 70%;
+    height: 65vh;
     background-color: #ded7cf;
     position: relative;
     border: 1px solid #1a1a1a;
-    margin-top:1vh;
-}
-
-.par_email {
-    position:relative;
-    top:-2vh;
-    font-size: 2vw;
-}
-
-.formulaire {
-    text-align: center;
-    position:relative;
-    top:10vh;
-    font-size: 1vw;
-}
-
-.zone_txt {
-    width: 35vw;
-    height: 15vh;
-    position:absolute;
+    margin-top:5vh;
+    padding: 4vh;
+    border-radius: 20px;
     left:50%;
     transform: translateX(-50%);
 }
 
-.cases {
-    text-align: left;
-    width: 35vw;
+.ligne2 {
+    width:60%;
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+    top:6vh;  
 }
 
-.p_nom {
-    position: absolute;
-    left: 36%;
-    transform: translateX(-50%);
-    top: 13.5vh;
-}
-
-.p_e-mail {
-    position: absolute;
-    left: 32.5vw;
-    top: 22vh;
-}
-
-.p_sujet {
-    position: absolute;
-    left: 32.5vw;
-    top: 30vh;
-}
-
-.votre_message {
-    position: absolute;
-    left: 32.5vw;
-    top:40vh;
-}
