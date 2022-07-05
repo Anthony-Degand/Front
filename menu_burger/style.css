@@ -62,6 +62,7 @@ nav {
     font-size: 1rem;
     padding:0.5rem 1rem;
     border-radius: 20px; /* arrondir les bords */
+    cursor:pointer;
 }
 
 .btn_inscription {
@@ -70,6 +71,7 @@ nav {
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 20px;
+    cursor:pointer;
 }
 
 .hero {
@@ -119,10 +121,9 @@ nav {
         justify-content:space-around; /* Les éléments sont répartis équitablement. À chaque extrémité, entre le bord du conteneur et le premier/dernier élément */
         transform:translateX(-100%); /* de base je veux que mon menu soit décaler de toute sa largeur vers la gauche (hors de l'écran) */
         transition:transform 1s; /* je met une transition de une seconde au clic pour donner un effet a mon menu */
-
     }
 
-    .menu li a, .btn_inscription, .btn_connection {
+    .menu li a {
         font-size: 2rem; /* je monte la taille de la police dans mon menu déroulant */
     }
 

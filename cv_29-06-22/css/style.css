@@ -1,6 +1,5 @@
 /*https://www.youtube.com/playlist?list=PL5BcU-_5Oa_o2nmu4eIVjrhxoT3jcQq8F      <-- Comprendre bootstrap */
 /*https://www.youtube.com/watch?v=T8w0mZxc2E0&ab_channel=LeDesignerduWeb        <-- 3 technique pour rendre le texte responsive */
-/*https://www.youtube.com/watch?v=pI9tS6P_RdY&ab_channel=DgeoDev                <-- menu burger */
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -8,10 +7,12 @@
 
 .container1 {
     width: 100%;
+    letter-spacing:3px;
 }
 
 html {
     --res: calc(0.01 * 10vmin);
+    font-size: 16px;
 }
 
 /*---------------------------------------squelette---------------------------------------------------------------*/
@@ -81,6 +82,7 @@ html {
     border: 2px solid black;
     position: relative;
     text-align: center;
+    letter-spacing:3px;
 }
 
 .f2 {
@@ -89,6 +91,7 @@ html {
     border: 2px solid black;
     position: relative;
     text-align: center;
+    letter-spacing:3px;
 }
 
 .f3 {
@@ -97,6 +100,7 @@ html {
     border: 2px solid black;
     position: relative;
     text-align: center;
+    letter-spacing:3px;
 }
 
 /*------------------------------------------------------div du nom et prénom----------------------------------------------------------------------------------------*/
@@ -112,7 +116,7 @@ html {
 
 /*----------------------------------------------------div de la bar de navigation------------------------------------------------------------------------------------*/
 
-
+/*---------------------------------------------------icon menu burger----------------------------------------------------------------------*/
 .menu_burger {
     width: 45px;
     height: 45px;
@@ -150,7 +154,9 @@ html {
     bottom: 5px;
 }
 
-.menub {
+/*-----------------------------------------------------------------------fin icons menu burger----------------------------------------------*/
+/*----------------------------------------------------------ecriture menu au format smartphone----------------------------------------------*/
+.petit_menu {
     font-family: 'Questrial', sans-serif;
     margin-left: 30px;
     position: absolute;
@@ -160,7 +166,8 @@ html {
     font-size: 24px;
 }
 
-
+/*----------------------------------------------------------fin ecriture menu au format smartphone----------------------------------------------*/
+/*------------------------------------------------------barre de navigation-------------------------------------------------------------------*/
 .barnav {
     background-color: #ffffff;
     float: right;
@@ -195,9 +202,24 @@ html {
 
 }
 
+/*------------------------------------------------------fin de la barre de navigation-------------------------------------------------------------------*/
+
 /* jusqu'à max 764 pixel , je veux les changement ci-dessous */
 
 @media	screen and (max-width: 764px) {
+
+    .toggle .fermer {
+        display: none;
+    }
+
+    .toggle .ouvrir {
+        position: absolute;
+       right:5%;
+       top:50%;
+       transform:translateY(-50%);
+       font-size: 45px;
+       cursor: pointer;
+    }
 
     .h_gauche .nomprenom {
         font-size: 30px;
@@ -235,21 +257,51 @@ html {
         font-size: calc(40 * var(--res));
     }
 
-    .img_menu_burger {
-        width: 65px;
-    }
-
     .mecontacter .p_contact,
     .mecontacter .lien_contact,
     .mecontacter .lien_contact:hover {
         font-size: 20px;
     }
 
-    .barnav,
-    .libarnav,
-    .lien1,
-    .lien1:hover {
-        display: none;
+    .h_droit {
+        position: relative;
+    }
+
+    .open .fermer {
+        display: block;
+        z-index: 25;
+        position: absolute;
+        top: -120%;
+        right: 0%;
+        padding: 2rem;
+        font-size: 55px;
+        cursor: pointer;
+        /*quand le menu est ouvert afficher mon icon fermer*/
+    }
+
+    .barnav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -105%;
+        text-align: center;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
+        padding: 1rem;
+        justify-content: space-around;
+        z-index: 19;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+
+    .open .barnav {
+        transform:translateX(0%); /* si le menu est ouvert il revient a sa position de départ */
+    }
+
+    .barnav li a,
+    .barnav li a:hover {
+        font-size: 2rem;
     }
 
 }
@@ -262,15 +314,17 @@ html {
         display: none;
     }
 
-/*-----------------------------------------------------------------menu burger----------------------------------------------------------------------------------------*/
-    .menu_burger,
-    .mb01,
-    .mb02,
-    .mb03,
-    .menub {
-        display: none;
+    .toggle .fermer,.toggle .ouvrir {
+        display:none;
     }
+
+    .petit_menu {
+        display:none;
+    }
+
 }
+
+/*-- fin des media querry --*/
 
 /*---------------------------------------------------------div de l'image du profil----------------------------------------------------------------------------------------*/
 .imageprofil {
@@ -326,7 +380,7 @@ html {
     margin-top: 600px;
 }
 
-/*taille des écrit en format smartphone*/
+/* taille des écrit en format smartphone */
 
 @media screen and (max-width: 768px) {
 
@@ -353,6 +407,8 @@ html {
     }
 
 }
+
+/* fin taille des ecrit au format smartphone */
 
 /*---------------------------------------------image poste de travail--------------------------------------------------------------------------*/
 
@@ -434,6 +490,10 @@ html {
 }
 
 /*-----------------------------------------me contacter---------------------------------------*/
+
+.info {
+    height:700px;
+}
 
 .p_contact {
     text-align: center;

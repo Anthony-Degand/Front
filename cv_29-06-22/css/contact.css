@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    letter-spacing:3px;
+    margin:0px;
+    padding:0px;
 }
 
 .container {
@@ -12,19 +16,19 @@
     width: 100%;
     height: 100px;
     position: fixed;
-    top:0px;
-    left:0px;
-    right:0px;
-    bottom:0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 .header2 {
     width: 100%;
-    height: 90px;
+    height: 100px;
 }
 
 .nom {
-    width: 25%;
+    width: 25vw;
     height: 100%;
     background-color: #ded7cf;
     border: 2px solid black;
@@ -39,12 +43,15 @@
     float: left;
 
 }
+
 /*fin du squelette*/
 /*div nom et prénom*/
 .nomprenom {
     text-align: center;
     vertical-align: middle;
+    width:25vw;
 }
+
 /*bar de navigation*/
 .barnav {
     background-color: #ffffff;
@@ -75,13 +82,67 @@
     color: #bba58a;
 
 }
+
 /*fin de la bar nav*/
 
 /*début du formulaire*/
 
 .contact {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 80vh;
     background-color: #ded7cf;
+    position: relative;
+    border: 1px solid #1a1a1a;
+    margin-top:1vh;
 }
 
+.par_email {
+    position:relative;
+    top:-2vh;
+    font-size: 2vw;
+}
+
+.formulaire {
+    text-align: center;
+    position:relative;
+    top:10vh;
+    font-size: 1vw;
+}
+
+.zone_txt {
+    width: 35vw;
+    height: 15vh;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.cases {
+    text-align: left;
+    width: 35vw;
+}
+
+.p_nom {
+    position: absolute;
+    left: 36%;
+    transform: translateX(-50%);
+    top: 13.5vh;
+}
+
+.p_e-mail {
+    position: absolute;
+    left: 32.5vw;
+    top: 22vh;
+}
+
+.p_sujet {
+    position: absolute;
+    left: 32.5vw;
+    top: 30vh;
+}
+
+.votre_message {
+    position: absolute;
+    left: 32.5vw;
+    top:40vh;
+}

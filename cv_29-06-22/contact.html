@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/cv_29-06-22/css/contact.css">
+    <!-----------------------------------------------------------------Google font---------------------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
+    <!-----------------------------------------------------------------bootstrap------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"> 
+    <!------------------------------------------------bootstrap javascript-------------------------------------------------------------------------->
+<link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
 </head>
+
 <body>
     <div class="container">
 
-        <div class="header"><!--tete de page-->
+        <div class="header">
+            <!--tete de page-->
 
             <div class="nom">
 
@@ -30,27 +41,52 @@
 
             </div>
 
-        </div><!--fin tete de page-->
+        </div>
+        <!--fin tete de page-->
 
         <div class="header2"></div>
 
         <div class="contact">
+
             
-            <form>
-                <p>Par E-mail</p><br><br><br>
+            <div class="mb-3">
+                <label for="nom" class="form-label">Nom </label>
+                <input name="nom" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Jean">
+              </div>
 
-                Votre nom : ( Obligatoire ) <br> <input type="text">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
 
-                Votre e-mail : ( Obligatoire ) <br> <input type="text">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
 
-                Sujet : <br> <input type="text">
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            <!--<form class="formulaire">
+    <p class="par_email">Contacter moi : </p><br><br><br>
+    <p class="p_nom"> Votre nom : </p> <br> <input class="cases" type="text" name="nom"><br><br>
+    <p class="p_e-mail">Votre e-mail : </p> <br> <input class="cases" type="e-mail" name="mail"><br><br>
+    <p class="p_sujet">Sujet : </p><br><input class="cases" type="text" name="sujet"><br><br>
+    <label class="votre_message" for="msg">Votre message : </label><br><br>
+    <textarea class="zone_txt" id="msg" name="msg"></textarea>
+</form>-->
 
-                Votre message : <br>
-
-                <textarea name="message" style="width:200px; height:600px;">
-                    
-            </form>
         </div>
     </div>
 </body>
+
 </html>
