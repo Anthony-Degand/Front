@@ -299,17 +299,16 @@ html {
 
 .mesprojet {
     position: absolute;
-    top: 72vh;
+    top: 66vh;
     left: 50%;
     transform: translateX(-50%);
     font-size: 24px;
     border-bottom: 1px solid #1a1a1a;
-    text-align: center;
 }
 
 .img_git {
     position: absolute;
-    top: 85vh;
+    top: 72vh;
     left: 50%;
     transform: translateX(-50%);
     width: 300px;
@@ -319,7 +318,7 @@ html {
 
 .gt_hb {
     position: absolute;
-    bottom: -250px;
+    bottom: 10px;
     font-size: 30px;
     left:22%;
     color:#bba58a;
@@ -327,7 +326,7 @@ html {
 
 .gt_hb:hover {
     position: absolute;
-    bottom: -250px;
+    bottom: 10px;
     font-size: 30px;
     left:22%;
     color:#8a755b;
@@ -335,7 +334,7 @@ html {
 
 .lk_ {
     position: absolute;
-    bottom: -250px;
+    bottom: 10px;
     font-size: 30px;
     left:25%;
     color:#bba58a;
@@ -343,7 +342,7 @@ html {
 
 .lk_:hover {
     position: absolute;
-    bottom: -250px;
+    bottom: 10px;
     font-size: 30px;
     left:25%;
     color:#8a755b;
@@ -351,7 +350,7 @@ html {
 
 .f_b {
     position: absolute;
-    bottom: -250px;
+    bottom: 10px;
     font-size: 30px;
     left:28%;
     color:#bba58a;
@@ -359,7 +358,7 @@ html {
 
 .f_b:hover {
     position: absolute;
-    bottom: -250px;
+    bottom: 10px;
     font-size: 30px;
     left:28%;
     color:#8a755b;
@@ -383,6 +382,3 @@ html {
     font-weight: 100;
 }
 
-@media screen and (max-width:768px) {
-
-}

@@ -2,17 +2,19 @@
     box-sizing: border-box;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
-    letter-spacing:3px;
-    margin:0px;
-    padding:0px;
+    letter-spacing: 3px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("/cv_29-06-22/css/img/background_formulaire.jpg");
+    object-fit: cover;
+    background-position: 100% 100%;
 }
 
 .container1 {
-    width: 100%;
-    letter-spacing:3px;
-    /*background-image: url(");
-    background-repeat: no-repeat;
-    background-size: 100%;*/
+    letter-spacing: 3px;
 }
 
 html {
@@ -21,7 +23,6 @@ html {
 }
 
 /*---------------------------------------squelette---------------------------------------------------------------*/
-
 .h_gauche {
     background-color: #ded7cf;
     border: 2px solid black;
@@ -47,6 +48,7 @@ html {
     transform: translateY(-50%);
     font-size: calc(40 * var(--res));
 }
+
 /*----------------------------------------------------------ecriture menu au format smartphone----------------------------------------------*/
 .petit_menu {
     font-family: 'Questrial', sans-serif;
@@ -94,6 +96,24 @@ html {
 
 }
 
+.lien2 {
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: calc(20 * var(--res));
+    font-family: 'Questrial', sans-serif;
+    color: #bba58a;
+
+}
+
+.lien2:hover {
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: calc(20 * var(--res));
+    font-family: 'Questrial', sans-serif;
+    color: #bba58a;
+
+}
+
 /*------------------------------------------------------fin de la barre de navigation-------------------------------------------------------------------*/
 
 /* jusqu'à max 764 pixel , je veux les changement ci-dessous */
@@ -106,11 +126,11 @@ html {
 
     .toggle .ouvrir {
         position: absolute;
-       right:5%;
-       top:50%;
-       transform:translateY(-50%);
-       font-size: 45px;
-       cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 45px;
+        cursor: pointer;
     }
 
     .h_gauche .nomprenom {
@@ -188,7 +208,8 @@ html {
     }
 
     .open .barnav {
-        transform:translateX(0%); /* si le menu est ouvert il revient a sa position de départ */
+        transform: translateX(0%);
+        /* si le menu est ouvert il revient a sa position de départ */
     }
 
     .barnav li a,
@@ -206,12 +227,13 @@ html {
         display: none;
     }
 
-    .toggle .fermer,.toggle .ouvrir {
-        display:none;
+    .toggle .fermer,
+    .toggle .ouvrir {
+        display: none;
     }
 
     .petit_menu {
-        display:none;
+        display: none;
     }
 
 }
@@ -220,22 +242,65 @@ html {
 
 .contact {
     width: 70%;
-    height: 65vh;
+    height: 40vh;
     background-color: #ded7cf;
     position: relative;
     border: 1px solid #1a1a1a;
-    margin-top:5vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding:5vw;
+}
+
+.p_contact {
+    text-align: center;
+    font-size: calc(24 * var(--res));
+    font-family: 'Questrial', sans-serif;
+    color: #1a1a1a;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contact2 {
+    width: 70%;
+    height: 62vh;
+    background-color: #ded7cf;
+    position: relative;
+    border: 1px solid #1a1a1a;
+    margin-top: 5vh;
     padding: 4vh;
     border-radius: 20px;
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
+    padding-bottom: 2.5vh;
 }
 
 .ligne2 {
-    width:60%;
-    position:relative;
-    left:50%;
-    transform:translateX(-50%);
-    top:6vh;  
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 6vh;
 }
 
+.footer {
+    position: relative;
+    background-image: url("/cv_29-06-22/css/img/footer.png");
+    background-size: cover;
+    width:100%;
+    height:10vh;
+    border-top:1px solid black;
+    margin:0%;
+    padding:0%;
+}
+
+.copyright {
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    transform:translateX(-50%);
+    font-weight: 100;
+}

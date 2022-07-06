@@ -199,7 +199,22 @@ html {
     font-size: calc(20 * var(--res));
     font-family: 'Questrial', sans-serif;
     color: #bba58a;
+}
 
+.lien2 {
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: calc(20 * var(--res));
+    font-family: 'Questrial', sans-serif;
+    color: #bba58a;
+}
+
+.lien2:hover {
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: calc(20 * var(--res));
+    font-family: 'Questrial', sans-serif;
+    color: #bba58a;
 }
 
 /*------------------------------------------------------fin de la barre de navigation-------------------------------------------------------------------*/
