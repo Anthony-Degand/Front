@@ -44,24 +44,12 @@ console.log("tableaux 2 :","\n")
 afficher2();
 /*---------------------------------------------------------------------------------------------------------------------------*/
 
-etudiantx = new Array(2);
+const toto = ["27 ans - Maubeuge"];
 
-etudiantx [0[0,1],1[0,1]];
-
-toto[0][0] = "27 ans";
-toto[0][1] = "Maubeuge";
-
-titi[1][0] = "38 ans";
-titi[1][1] = "Valencienne";
-
-
-const toto = [ 40, "Maubeuge"];
-const titi = [25, "Valencienne"];
-
-function etudiant(toto) {
-  return toto === document.getElementById("etudiant").value;
+function eleve(toto) {
+  return toto = document.getElementById("etudiant").value;
 }
 
 function myFunction() {
-  document.getElementById("reponse").innerHTML = toto.find(etudiant);
+  document.getElementById("demo").innerHTML = toto.find(eleve);
 }
